@@ -87,15 +87,15 @@
     .btn:hover  { transform: translateY(-4px); }
     .btn:active { transform: translateY(-1px); }
 
+    /* 홍보 영상 — 흰색 */
     .btn-video {
       background: #FFFFFF;
       color: #074D9D;
       box-shadow: 0 10px 36px rgba(7,77,157,0.35);
     }
-    .btn-video:hover {
-      box-shadow: 0 18px 48px rgba(7,77,157,0.45);
-    }
+    .btn-video:hover { box-shadow: 0 18px 48px rgba(7,77,157,0.45); }
 
+    /* 데모 신청 — 반투명 */
     .btn-demo {
       background: rgba(255,255,255,0.13);
       color: #FFFFFF;
@@ -104,6 +104,19 @@
       backdrop-filter: blur(12px);
     }
     .btn-demo:hover {
+      background: rgba(255,255,255,0.20);
+      box-shadow: 0 18px 48px rgba(7,77,157,0.30);
+    }
+
+    /* 리플렛 보기 — 반투명 */
+    .btn-leaflet {
+      background: rgba(255,255,255,0.13);
+      color: #FFFFFF;
+      border: 1.5px solid rgba(255,255,255,0.38);
+      box-shadow: 0 10px 36px rgba(7,77,157,0.20);
+      backdrop-filter: blur(12px);
+    }
+    .btn-leaflet:hover {
       background: rgba(255,255,255,0.20);
       box-shadow: 0 18px 48px rgba(7,77,157,0.30);
     }
@@ -128,6 +141,7 @@
 
     <div class="btn-group">
 
+      <!-- 홍보 영상 -->
       <button class="btn btn-video"
         onclick="window.location.href='https://www.youtube.com/@INNO3Dmarketing'">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="#FF0000">
@@ -136,6 +150,7 @@
         홍보 영상 보기
       </button>
 
+      <!-- 데모 신청 -->
       <button class="btn btn-demo"
         onclick="window.location.href='https://forms.gle/pcGDpr1dGEruw4Ki7'">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
@@ -146,6 +161,19 @@
           <line x1="9" y1="15" x2="15" y2="15"/>
         </svg>
         데모 신청하기
+      </button>
+
+      <!-- 리플렛 보기 -->
+      <button class="btn btn-leaflet"
+        onclick="window.location.href='https://drive.google.com/drive/folders/1xmbfFDqXrYGYblNO0jtfdPOEsBSTQAH5?usp=sharing'">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+          stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14,2 14,8 20,8"/>
+          <line x1="9" y1="13" x2="15" y2="13"/>
+          <line x1="9" y1="17" x2="15" y2="17"/>
+        </svg>
+        리플렛 보기
       </button>
 
     </div>
